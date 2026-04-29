@@ -1,0 +1,19 @@
+package com.example.modul3xml
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.modul3xml.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // Membaca file activity_main.xml dan menampilkannya ke layar
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+    }
+}
